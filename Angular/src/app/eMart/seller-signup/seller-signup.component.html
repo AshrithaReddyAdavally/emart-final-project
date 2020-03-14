@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+    <div class="col"></div>
+    
+    <div class="card card-align mt-5">
+    
+    <div class="card-header"><h3>Sign-in</h3></div>
+    <div class="card-body">
+    <form action="">
+    <div class="form-row">
+        <div class="col">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter Username"  [(ngModel)]="username" name="user"/>
+      </div>
+      <div class="col">
+        <label for="pwd">Password</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password"  [(ngModel)]="password"name="password"/> 
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="">Company Name</label>
+        <input type="company name" class="form-control" id="company name" placeholder="Enter Company Name"  [(ngModel)]="company"name="Company Name"/>
+      </div>
+     
+      <div class="form-group">
+        <label for="">GSTIN</label>
+        <input type="GSTIN" class="form-control" id="GSTIN" placeholder="Enter GSTIN"[(ngModel)]="gst" name="GSTIN"/>
+      </div>
+      <div class="form-group">
+        <label for="">Address</label>
+        <input type="Address" class="form-control" id="Address" placeholder="Enter Address"[(ngModel)]="address" name="Address"/>
+      </div>
+      <div class="form-group">
+        <label for="">Website</label>
+        <input type="Website" class="form-control" id="Website" placeholder="Enter Website"[(ngModel)]="website" name="Website"/>
+      </div>
+      <div class="form-group">
+        <label for="">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" [(ngModel)]="email"name="email"/>
+      </div>
+       <div class="form-group">
+        <label for="">Brief About Company</label>
+        <input type="Brief About Company" class="form-control" id="Brief About Company" placeholder="Enter Brief About Company" [(ngModel)]="brief"name="Brief About Company"/>
+      </div>
+      <div class="form-group">
+        <label for="">Mobile Number</label>
+        <input type="tel" class="form-control" id="Mobile Number" placeholder="Enter Mobil Number" name="mobile number" [(ngModel)]="contact"pattern="^\d{10}$"/>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="addSeller() ">Register</button>&nbsp;
+      <label>Already have an account?</label>
+      <a routerLink="/login">login</a>
+      </form>
+      </div>
+      </div>
+     
+      <div class="col"></div>
+      </div>
+      </div>
